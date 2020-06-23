@@ -1,4 +1,21 @@
 <h1>Houses</h1>
 <% @houses.each do |house| %>
-  <%= image_tag house.image_url, alt: "alttext" %>
+  <%= image_tag house.image_url, alt: "alttext", class: "image-house" %>
+  <%= link_to "House", house_path(house) %>
 <% end %>
+<div class="l-container">
+  <div class="b-game-card">
+    <div class="b-game-card__cover" style="background-image: url(https://i.pinimg.com/564x/98/2a/6c/982a6cfe7aa8a97efe58b48880982e66.jpg);">
+      <%= link_to "House", houses_path %>
+    </div>
+  </div>
+  <div class="b-game-card">
+    <div class="b-game-card__cover" style="background-image: url(https://i.pinimg.com/564x/7d/28/f3/7d28f32e34481b6b4051b5d32e8ae5cb.jpg);"></div>
+  </div>
+  <div class="b-game-card">
+    <div class="b-game-card__cover" style="background-image: url(https://i.pinimg.com/564x/7b/45/aa/7b45aa97da112463b317cb2450f670b1.jpg);"></div>
+  </div>
+  <div class="b-game-card">
+    <div class="b-game-card__cover" style="background-image: url(https://i.pinimg.com/564x/e2/36/a1/e236a1fa90e56421518d55c8c9cb2aba.jpg);"></div>
+  </div>
+</div>
