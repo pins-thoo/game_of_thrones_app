@@ -26,6 +26,7 @@ $c_1: #353540;
   width: 100%;
   max-width: 1200px;
   padding: 30px;
+  margin: 0 auto;
 
   @media screen and (max-width: 760px) {
     grid-template-columns: repeat(2, 1fr);
@@ -42,7 +43,7 @@ $c_1: #353540;
 
   &__cover {
     position: absolute;
-    z-index: 1;
+    // z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -109,4 +110,12 @@ $c_1: #353540;
   }
 
 
+}
+
+.card-link {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
